@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace FacadeDesignPattern.Subsystems;
 
-namespace FacadeDesignPattern.Subsystems;
-internal class Projector
+public class Projector
 {
+    public void On()
+        => Console.WriteLine("Projector is ON");
+
+    public void SetInput(string input) => 
+        Console.WriteLine($"Projector input set to {input}");
 }

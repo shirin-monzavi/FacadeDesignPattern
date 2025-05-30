@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace FacadeDesignPattern.Subsystems;
 
-namespace FacadeDesignPattern.Subsystems;
-internal class Amplifier
+public class Amplifier
 {
+    public void On() 
+        => Console.WriteLine("Amplifier is ON");
+    public void SetVolume(int level) 
+        => Console.WriteLine($"Volume set to {level}");
 }

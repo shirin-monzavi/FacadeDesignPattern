@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace FacadeDesignPattern.Subsystems;
 
-namespace FacadeDesignPattern.Subsystems;
-internal class Lights
+public class Lights
 {
+    public void Dim(int level) => 
+        Console.WriteLine($"Lights dimmed to {level}%");
 }
